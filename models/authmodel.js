@@ -7,15 +7,14 @@ const authSchema = new moongose.Schema({
     unique: true,
   },
   email: {
-    type:String,
-    required:true,
-    unique:true
+    type: String,
+    required: true,
+    unique: true,
   },
   password: {
-    type:string,
-    required:true
-  }
+    type: String,
+    required: true,
+  },
 });
 
-
-module.exports = moongose.model('Auth',authSchema)
+module.exports = moongose.model("Auth", authSchema);
